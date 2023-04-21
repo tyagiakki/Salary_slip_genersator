@@ -1,0 +1,47 @@
+package salary_Slip;
+import java.util.*;
+
+public class salary {
+	public static void main(String[] args) {
+		int count;
+		System.out.println("!!SALARY SLIP!!");
+		System.out.println(" 1.PROGRAMMER \t 2.ASSISTANT PROFESSOR \t 3.ASSOCIATE "
+				 + "PROFESSOR \t 4.PROFESSOR ");
+		Scanner sc=new Scanner(System.in);
+		int c=sc.nextInt();
+		switch(c) {
+		case 1:
+			programmer p=new programmer();
+			p.getdata();
+			p.getprogrammer();
+			p.display();
+			p.calculator();
+			break;
+		case 2:
+			ASSISTANT_PROFESSOR A=new 	ASSISTANT_PROFESSOR();
+			A.getdata();
+			A.getprogrammer();
+			A.display();
+			A.calculator();
+			break;
+		case 3:
+			associate_professor a=new associate_professor();
+			a.getdata();
+			a.getprogrammer();
+			a.display();
+			a.calculator();
+			break;
+		case 4:
+			associate b=new associate();
+			b.getdata();
+			b.getprogrammer();
+			b.display();
+			b.calculator();
+			break;
+			}
+		System.out.println("If you want to continue press 1 or if you wanrt to exit press 0");
+		count =sc.nextInt();
+		while(count==1);
+		}
+
+}
